@@ -1,0 +1,22 @@
+@import "./vars";
+
+#titulo {
+    font-size: $titulo_font-size;
+    font-family: $titulo_font-family;
+    text-align: $titulo_text-align;
+    letter-spacing: $titulo_letter-spacing;
+    margin-top: $titulo_margin-top;
+    margin-bottom: $titulo_margin-bottom; 
+
+    @include xs{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 15px;
+        font-size: 2.2rem;
+    }
+
+    @include sm{
+        margin-top: 65px;
+        margin-bottom: 40px;
+    }
+}

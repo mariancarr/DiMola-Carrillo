@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@500&display=swap');
+
+
+#footer{
+    background-color: rgb(135, 180, 190);
+
+    &__row{
+        justify-content: center;
+    }
+
+    &__nav{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 0px;
+
+        @include md{
+            justify-content: center;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        &__li{
+            margin-top: 5px;
+        }
+    
+        &__a{
+            text-decoration: none;
+            font-family: 'Halant', serif;
+            transition: all 0.3s ease-in;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: rgb(0, 0, 0);
+    
+            &:hover{
+                color: rgb(255, 255, 255); 
+            }
+        }
+    }
+    
+
+    &__p{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        padding: 0px 10px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 1;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+        font-family: 'Halant', serif;
+        border-right: solid 2px rgb(101, 144, 151);
+        border-left: solid 2px rgb(101, 144, 151); 
+        text-align: center; 
+
+        @include md{
+            width: auto;
+            padding: 10px 0px;
+            border-right: none;
+            border-left: none; 
+            border-top: dashed 2px rgb(101, 144, 151);
+            
+        }
+
+        @include sm{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 10px;
+            width: auto;
+            padding: 10px;
+            border-right: none;
+            border-left: none; 
+            border-top: dashed 2px rgb(101, 144, 151);
+            
+        }
+
+        @include xs{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 10px;
+            width: auto;
+            padding: 10px;
+            border-right: none;
+            border-left: none; 
+            border-top: dashed 2px rgb(101, 144, 151);
+        }
+    }
+
+    &__container__redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        @include lg{
+            justify-content:space-evenly;
+            gap:0px;
+        }
+
+        @include md{
+            flex-direction: row;
+            justify-content: center;
+            gap: 70px;
+            margin-top: 35px;
+        }
+
+        @include sm{
+            flex-direction: row;
+            gap: 35px;
+            margin-top: 25px;
+        }
+
+        @include xs{
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 25px;
+        }
+
+        
+    }
+    &__redes__img{
+        transition: all  0.25s linear; 
+        color: black;
+        height: 27px;
+        width: 27px;
+
+        &:hover{
+            transform: scale(1.2);
+            opacity: 1;     
+        }
+    }
+    
+    
+    &__redes__insta{
+        @extend #footer__redes__img;
+    
+        &:hover{
+            @extend #footer__redes__img:hover;
+            color: rgb(216, 0, 162);     
+        }
+    }
+    
+    
+    
+    &__redes__face{
+        @extend #footer__redes__img;
+    
+        &:hover{
+            @extend #footer__redes__img:hover;
+            color: rgb(2, 41, 168);     
+        }
+    }
+    
+    
+    
+    &__redes__mail{
+        @extend #footer__redes__img;
+    
+        &:hover{
+            @extend #footer__redes__img:hover;
+            color: rgb(0, 215, 253);     
+        }
+    }
+    
+    &__redes__wpp{
+        @extend #footer__redes__img;
+    
+        &:hover{
+            @extend #footer__redes__img:hover;
+            color: rgb(0, 255, 34);     
+        }
+    }
+
+   
+    
+
+    &__end{
+        background: rgb(97, 134, 146);
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+        font-size: 0.8rem;
+    
+
+        &__p{
+            word-spacing: 2px;
+            color:rgb(0, 0, 0);
+            margin-bottom: 0px;
+        }
+
+        &__span{ 
+            color: rgba(71, 71, 71, 0.459);
+            font-weight: lighter;
+            
+        }
+    }
+}

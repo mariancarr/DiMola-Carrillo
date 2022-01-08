@@ -1,0 +1,11 @@
+@import "./vars";
+
+#subtitulo{
+    font-size: $subtitulo_font-size;
+    margin-bottom: $subtitulo_margin-bottom;
+    font-family: $subtitulo_font-family;
+    text-align: $subtitulo_text-align;
+    @include xs{
+        font-size: 1.3rem;
+    }
+}

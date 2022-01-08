@@ -1,0 +1,94 @@
+@import "../animations";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+#hero{
+    background-image: url("../images/fondohero.jpeg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-attachment: fixed;
+    padding: 60px 0px;
+
+    @include xs{
+        padding: 0px 15px;
+    }
+    
+    &__container{
+        width: 100%;
+        height: 100%;
+        gap: 80px;
+        padding: 20px 0px;
+
+        @include xs{
+            gap: 40px;
+        }
+
+        @include sm{
+            gap: 40px;
+        }
+
+        @include md{
+            gap: 40px;
+        }
+    }
+
+    &__titulo{
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        border-bottom: solid 2px rgb(116, 188, 221);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        @include xs{
+            font-size: 1.3rem;
+        }
+     }
+
+    &__subtitulo{
+        font-size: 2.9rem;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 10px; 
+
+        @include xs{
+            font-size: 2rem;
+            color: white;
+        }
+
+        @include sm{
+            font-size: 2.4rem;
+        }
+
+        @include md{
+            color: white;
+        }
+    }
+
+    &__btn{
+        text-decoration: none;
+        padding: 11px 17px;
+        color:rgba(255, 255, 255, 0.993) ;
+        transition: all 0.3s linear;
+        border-radius: 4px;
+        background-color: rgb(255, 71, 71);
+        margin-top: 5px;
+        border-radius: 10px;
+        font-size: 1.2rem; 
+
+        @include xs{
+            font-size: 1.1rem;
+            padding: 8px 14px;
+            
+        }
+
+        &:hover{
+            background-color:rgb(136, 19, 19)
+        }
+    }
+
+
+     
+}
+
+

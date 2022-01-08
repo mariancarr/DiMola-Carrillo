@@ -1,0 +1,275 @@
+
+#telasLienzo{
+    &__row{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap: 20px;
+       
+
+        @include xs{
+            display: flex;
+            flex-direction: column-reverse;
+        } 
+        
+        @include md{
+            display: flex;
+            flex-direction: column-reverse;
+        } 
+    }
+    
+
+    &__txt{
+        font-family: $txtGeneral_font-family;
+        font-size: 1.1rem;
+        text-align: center;
+
+        @include xs{
+            font-size: 1rem;
+            color: rgb(70, 70, 70);
+        }
+    }
+
+    &__telas__img1y2{
+        width: 100%;
+        height: auto;
+
+        @include xs{
+            width: 80%;
+        }
+
+        @include md{
+            width: 35%;
+        }
+    }
+
+    &__telas__img3{
+        width: 90%;
+        height: auto;
+
+        @include xs{
+            width: 70%;
+        }
+
+        @include md{
+            width: 30%;
+        }
+    }
+
+    &__producto__lienzos{
+
+        &__row{
+            display:flex;
+            flex-direction:row;
+            align-items:baseline;
+            justify-content:center;
+
+            @include xs{
+                gap: 45px;
+                margin-bottom: 30px;
+            }
+
+            @include md{
+                gap: 45px;
+                flex-wrap: wrap;
+            }
+        }
+    
+        &__img{
+            width: 95%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px rgb(148, 187, 221);
+            transition: all 0.3s linear;
+
+            @include xs{
+                width: 60%;
+                box-shadow: none;
+            }
+
+            @include md{
+                width: 90%;
+            }
+
+                &:hover{
+                    opacity: 0.75;
+                }
+        }
+
+        &__descripcion{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: $txtGeneral_font-size;
+            color: rgb(59, 59, 59);
+            text-align: center;
+        }
+
+        &__gramos{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.1rem;
+            color: rgb(59, 59, 59);
+            
+        }
+
+        &__rollolienzo{
+            line-height: 2;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+
+            @include xs{
+                margin-bottom: 30px;
+            }
+
+            @include md{
+                margin-top: 45px;
+                margin-bottom: 30px;
+            }
+
+            &__titulo{
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.3rem;
+                color:  rgb(92, 190, 92);
+            }
+        }
+    }
+}
+ 
+
+#molduras{
+    margin-top: 200px;
+
+    @include xs{
+        margin-top: 100px;
+    }
+
+    @include md{
+        margin-top: 100px;
+    }
+
+    @include lg{
+        margin-top: 150px;
+    }
+
+    &__p{
+        margin-right: 35px;
+
+        @include xs{
+            margin-right: 0px;
+        }
+    }
+
+    &__ul{
+        padding-left: 0px;
+    }
+
+    &__sublista{
+        list-style: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        line-height: 1.8;
+        justify-content: center;
+        padding: 10px;
+        color: rgb(58, 58, 58);
+    }
+
+    &__imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+
+        &__img1 {
+            width: 90%;
+            height: auto;
+
+            @include md{
+                width: 60%;
+            }
+
+            @include lg{
+                width: 100%;
+            }
+        }
+
+        &__img2 {
+            width: 70%;
+            height: auto;
+
+            @include md{
+                width: 40%;
+            }
+
+            @include lg{
+                width: 80%;
+            }
+        }
+    }  
+}
+
+#medidas{
+    margin-top: 200px;
+
+    @include xs{
+        margin-top: 100px;
+    }
+
+    @include md{
+        margin-top: 100px;
+    }
+
+    @include lg{
+        margin-top: 150px;
+    }
+
+    &__row{
+        @include xs{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @include md{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+#carouselExampleControls{
+    width: 60%;
+    box-shadow: 5px 5px 5px rgb(150, 150, 150);
+
+    @include md{
+        width: 40%;
+    }
+
+    @include lg{
+        width: 80%;
+    }
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#imgs{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+
+    @include md{
+        flex-direction: row;
+    }
+
+    @include lg{
+        align-self:flex-start;
+        gap:40px;
+    }
+}

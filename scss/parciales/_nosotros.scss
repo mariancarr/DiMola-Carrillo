@@ -1,0 +1,117 @@
+
+
+#nosotros{
+    margin-top: 0px;
+
+    &__row{
+        justify-content: center;
+        align-items: center;
+
+        @include xs{
+            gap:50px;
+        }
+
+        @include sm{
+            display: flex;
+            flex-direction: column-reverse;
+            gap:40px;
+        }
+
+        @include md{
+            display: flex;
+            flex-direction: column-reverse;
+            gap:70px;
+        }
+
+        @include lg{
+            align-items: center;
+        }
+    }
+    
+    &__txt{
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    
+    &__txt__carita{
+        width: 6%;
+        height: auto;
+        color: chocolate;
+        margin-bottom: 25px;
+        font-weight: 900;
+        transition: all 0.4s linear;
+
+        @include xs{
+            width: 10%;
+        }
+
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+
+    &__txt--negrita{
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+#endcontacto{
+    &__txt{
+        font-size: 1.1rem;
+        font-family: $txtGeneral_font-family;
+    }
+
+    &__img{
+        width: 50%;
+        margin-top: 25px;
+    }
+}
+
+#carouselExampleIndicators{
+    width: 95%;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(150, 150, 150);
+
+    @include xs{
+        width: 100%;
+    }
+
+    @include sm{
+        width: 50%;
+    }
+
+    @include md{
+        width: 50%;
+    }
+
+    @include lg{
+        width: 100%;
+    }
+
+
+}
+
+#carousel-img{
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s linear;
+}
+
+#carousel-img:hover{
+   opacity: 0.8;
+}
+
+#carousel-vid{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+

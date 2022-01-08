@@ -1,0 +1,41 @@
+#precios__bastidores{
+    @extend #flex-row-center; 
+    width: 100%;
+    height: 100%;
+    &__img{
+        width: 75%;
+        height: auto;
+        @include xs{
+            width: 100%;
+        }
+
+        @include md{
+            width: 85%;
+        }
+
+        @include sm{
+            width: 95%;
+        }
+    }
+}
+
+#arrow-left-right{
+    font-size: 1.2rem;
+    margin: 0px 5px;
+    color: rgb(0, 128, 0);
+    
+}
+
+#precio-siguiente{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 0.1s linear;
+    &:hover{
+        color: rgb(0, 128, 0);
+    }
+}
+
+#precios_end{
+    margin-top: 30px;
+}

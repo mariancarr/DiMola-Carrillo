@@ -1,0 +1,56 @@
+
+#contacto__labels{
+    font-family: $txtGeneral_font-family;
+    font-size: 1rem;
+    color: rgb(49, 49, 49);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#endcontacto{
+
+    &__txt{
+        font-size: 1.1rem;
+        font-family: $txtGeneral_font-family;
+    }
+
+    &__img{
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+#btn{
+    padding: 7px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    color:rgb(255, 255, 255);
+}
+
+#btn--enviar{
+    @extend #btn;
+    background-color: rgb(13, 110, 253);
+   
+}
+
+#btn--enviar:hover{
+    color: rgb(0, 255, 76);
+    background-color: rgb(9, 89, 207);
+}
+
+
+
+#btn--reset{
+    @extend #btn;
+    background-color: rgb(212, 33, 2);
+    margin-left: 20px;
+}
+
+#btn--reset:hover{
+    background-color: rgb(173, 39, 16);
+    border:none;
+}
+

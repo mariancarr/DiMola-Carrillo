@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+#index__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.4s ease-out; 
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px rgb(68, 68, 68); 
+    margin-bottom: 30px;
+
+    &:hover{
+        background-color: rgba(218, 248, 215, 0.657);
+    }
+
+    &__row{
+        display: flex;
+        justify-content:space-evenly;
+        @include xs{
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include sm{
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        @include md{
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center; 
+        }
+
+        @include lg{
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center; 
+        }
+    
+    }
+
+
+    &__texto{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(52, 156, 52);
+        font-family: 'Architects Daughter', cursive;
+        text-align: center; 
+        font-weight: 700;
+            &:hover{
+                color: rgb(52, 156, 52);  
+            }
+    }
+}
+
+#index__subtitulos{
+    font-size: map-get($estilos, s1.7);
+    color: map-get($estilos, color);
+    text-align: map-get($estilos, center);
+    margin-bottom: map-get($estilos, mbot30);
+}
+
+#container__pedidos{
+    margin-top: 150px;
+
+    @include xs{
+        margin-top: 70px;
+    }
+
+    @include sm{
+        margin-top: 80px;
+    }
+
+    @include md{
+        margin-top: 70px;
+    }
+
+    @include lg{
+        margin-top: 100px;
+    }
+}
+
+#index__pedidos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 10px;
+
+    @include xs{
+        gap: 10px;
+        margin-top: 40px;
+       
+    }
+
+    @include md{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    @include lg{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__subtitulos{
+        text-decoration: none;
+        font-family: 'PT Serif', serif;
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 700;
+            &:hover{
+                color: black;
+            }
+    }
+        
+
+    &__enlaces{
+        text-decoration: none;
+        color: black;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 900;
+        transition: all 0.2s linear;
+            &:hover{
+                color: rgb(60, 187, 103);
+                opacity: 0.7;
+            }
+    }           
+}
+
+
+#index__pasos{
+    margin-top: 200px;
+    @include xs{
+        margin-top: 100px;
+    }
+
+    @include sm{
+        margin-top: 100px;
+    }
+
+    @include md{
+        margin-top: 100px;
+    }
+
+    @include lg{
+        margin-top: 130px;
+    }
+    
+
+    &__img{
+        margin-top: 20px;
+        width: 130px;
+        height: 130px;
+        transition: all 0.6s linear;
+
+        @include md{
+            width: 115px;
+            height: 115px;
+        }
+            &:hover{
+                opacity: 0.8;
+            }
+    } 
+}
+
+#pasos__span{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+
+    @include xs{
+        font-size: 1.2rem
+    }
+
+    @include md{
+        font-size: 1.1rem
+    }
+}
+
+#pasos__span--1{
+    @extend #pasos__span;
+    color: rgb(146, 144, 24);
+    
+}
+
+#pasos__span--2{
+    @extend #pasos__span;
+    color: rgb(49, 122, 46);
+}
+
+#pasos__span--3{
+    @extend #pasos__span;
+    color: rgb(46, 124, 138);
+}
+
+
+.btn-toggler-icon{
+    height: 2px;
+    width: 25px;
+    margin: 5px 0px;
+    background-color: white;
+}
+
